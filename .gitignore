@@ -1,0 +1,17 @@
+
+#archivos/ son los repaldos escanaeados de los formularios
+archivos/ 
+
+#archivose/ son los archivos de los respaldos de las entregas 
+archivose/
+
+#Archivos que se generan con respaldos  de las entregas y del registro
+respaldos/
+
+#ignorar la carpeta de pruebas manage_php
+manage_php/
+
+#Ignorar el archivo de pruebas de la carpeta clases y la conexion a la BD
+clases/prb01.php
+vistas/prb.sql
+leeme
