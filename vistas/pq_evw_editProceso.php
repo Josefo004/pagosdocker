@@ -69,7 +69,7 @@
             </div>
             <div class="form-group col-md-4">
                 <?php
-                $enlace_a_pagos = 'https://pagos.chuquisaca.gob.bo/procesos/pdf2';
+                $enlace_a_pagos = 'https://pagos.chuquisaca.gob.bo/procesos/pdf2/'.$proceso[0]['id_proceso'];
                 echo "<a class='btn btn-success btn-block' href='".$enlace_a_pagos."' target='_blank'>SOLO IMPRIMIR</a>";
                 ?>
             </div>
