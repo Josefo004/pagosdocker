@@ -18,5 +18,8 @@ if ($proceso!==false){
   //echo '<pre>'.var_export($dependencias,true).'</pre>';
   require('../vistas/pq_evw_editProceso.php');
 }
+else{
+  echo "Sin datos para el Criterio de Busqueda";
+}
 Conexion::cerrar();
 ?>

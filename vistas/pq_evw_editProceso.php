@@ -65,6 +65,14 @@
             <div class="form-group col-md-4">
                 <button type="button" class="btn btn-success btn-block" onclick="enviar_formulario('form_formulario','cuerpo2','scripts_php/pg_save_proceso.php')">GUARDAR PROCESO</button>
             </div>
+            <div class="form-group col-md-4">
+            </div>
+            <div class="form-group col-md-4">
+                <?php
+                $enlace_a_pagos = 'https://pagos.chuquisaca.gob.bo/procesos/pdf2';
+                echo "<a class='btn btn-success btn-block' href='".$enlace_a_pagos."' target='_blank'>SOLO IMPRIMIR</a>";
+                ?>
+            </div>
         </div>
     </div>
 </div>
