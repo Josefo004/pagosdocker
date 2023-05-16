@@ -496,5 +496,35 @@ class General {
 		return $re;
 	}
 
+	public static function delete_observaciones($conexion, $id_proceso){
+		$sql = "DELETE FROM pag_observaciones WHERE proceso_id = $id_proceso;";
+		$consulta = $conexion->prepare($sql);
+		$consulta->execute();
+		$arr = $consulta->errorInfo();
+		if($arr[0]!='00000'){echo "\nPDOStatement::errorInfo():\n"; print_r($arr);}
+		$re = $consulta->rowCount();
+		return $re;
+	}
+
+	public static function delete_procesos_estados($conexion, $id_proceso){
+		$sql = "DELETE FROM pag_procesos_estados WHERE proceso_id = $id_proceso;";
+		$consulta = $conexion->prepare($sql);
+		$consulta->execute();
+		$arr = $consulta->errorInfo();
+		if($arr[0]!='00000'){echo "\nPDOStatement::errorInfo():\n"; print_r($arr);}
+		$re = $consulta->rowCount();
+		return $re;
+	}
+
+	public static function delete_proceso($conexion, $id_proceso){
+		$sql = "DELETE FROM pag_procesos WHERE id = $id_proceso;";
+		$consulta = $conexion->prepare($sql);
+		$consulta->execute();
+		$arr = $consulta->errorInfo();
+		if($arr[0]!='00000'){echo "\nPDOStatement::errorInfo():\n"; print_r($arr);}
+		$re = $consulta->rowCount();
+		return $re;
+	}
+
 }
 ?>

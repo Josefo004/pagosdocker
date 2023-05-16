@@ -66,6 +66,7 @@
                 <button type="button" class="btn btn-success btn-block" onclick="enviar_formulario('form_formulario','cuerpo2','scripts_php/pg_save_proceso.php')">GUARDAR PROCESO</button>
             </div>
             <div class="form-group col-md-4">
+                <button type="button" class="btn btn-success btn-block" onclick="enviar_formulario('form_formulario','cuerpo2','scripts_php/pg_delete_proceso.php')">BORRAR PROCESO</button>
             </div>
             <div class="form-group col-md-4">
                 <?php
