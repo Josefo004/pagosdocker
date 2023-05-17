@@ -62,7 +62,7 @@ function respuesta_gentede(inphi, vinphi, inpstr, vinpstr, ndiv) {
 
 //funcion para Borrar
 function borrar_caso(ndiv, dhttp, vi) { //Se guardara TODO{
-    var r = confirm("ATENCION!! se Borrara UN REGISTRO Esta seguro?? : ");
+    var r = confirm("ATENCION!! se Borrara UN PROCESO DE PAGO, esto es IRREBERSIBLE, Esta seguro?? : ");
     if (r == true) {
         loadDoc(ndiv, dhttp, vi);
     }

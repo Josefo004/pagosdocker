@@ -1,19 +1,19 @@
 <?php
 
 class Conexion extends PDO {
-  // private $puerto = '5432';
-  // private $tipo_de_base = 'pgsql';
-  // private $host = '192.168.200.61';
-  // private $nombre_de_base = 'gadch_bdpagos';
-  // private $usuario = 'postgres';
-  // private $contrasena = 'p0sTgr35*gadCH.';
+  private $puerto = '5432';
+  private $tipo_de_base = 'pgsql';
+  private $host = '192.168.200.61';
+  private $nombre_de_base = 'gadch_bdpagos';
+  private $usuario = 'postgres';
+  private $contrasena = 'p0sTgr35*gadCH.';
 
- private $puerto = '5432';
- private $tipo_de_base = 'pgsql';
- private $host = '192.168.200.64';
- private $nombre_de_base = 'pagosmigrado';
- private $usuario = 'postgres';
- private $contrasena = 'p0sTgr35*gadCH.';
+// private $puerto = '5432';
+// private $tipo_de_base = 'pgsql';
+// private $host = '192.168.200.64';
+// private $nombre_de_base = 'pagosmigrado';
+// private $usuario = 'postgres';
+// private $contrasena = 'p0sTgr35*gadCH.';
 
   private static $instancia = null;
 

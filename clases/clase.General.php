@@ -526,5 +526,29 @@ class General {
 		return $re;
 	}
 
+	public static function exits_observaciones($conexion, $id_proceso) {
+		$sql = "SELECT * FROM pag_observaciones WHERE proceso_id = $id_proceso;";
+		$consulta = $conexion->prepare($sql);
+		$consulta->execute();
+		$registros = $consulta->fetchAll();
+    if ($registros) {
+			return $registros;
+		} else {
+			return false;
+		};
+	}
+
+	public static function exits_procesos_estados($conexion, $id_proceso) {
+		$sql = "SELECT * FROM pag_procesos_estados WHERE proceso_id = $id_proceso;";
+		$consulta = $conexion->prepare($sql);
+		$consulta->execute();
+		$registros = $consulta->fetchAll();
+    if ($registros) {
+			return $registros;
+		} else {
+			return false;
+		};
+	}
+
 }
 ?>
